@@ -7,8 +7,6 @@
  *
  */
 
-import FBSnapshotTestCase
-
 public extension FBSnapshotTestCase {
     func FBSnapshotVerifyView(_ view: UIView, identifier: String? = nil, suffixes: NSOrderedSet = FBSnapshotTestCaseDefaultSuffixes(), perPixelTolerance: CGFloat = 0, overallTolerance: CGFloat = 0, file: StaticString = #file, line: UInt = #line) {
     FBSnapshotVerifyViewOrLayer(view, identifier: identifier, suffixes: suffixes, perPixelTolerance: perPixelTolerance, overallTolerance: overallTolerance, file: file, line: line)
